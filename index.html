@@ -5,7 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Themoviedb</title>
+    <link rel="stylesheet" href="./public/styles/header.css" />
     <link rel="stylesheet" href="./public/styles/index.css" />
+    <link rel="stylesheet" href="./public/styles/footer.css" />
     <script
       src="https://kit.fontawesome.com/e513c0ed06.js"
       crossorigin="anonymous"
@@ -13,40 +15,38 @@
   </head>
   <body>
     <!-- header -->
-    <div>
-      <div class="header">
-        <div class="header-left">
-          <div class="item">
-            <img
-              src="./public/images/tmdb.svg"
-              width="155"
-              height="20"
-              alt="tmdb"
-            />
-          </div>
-          <div class="dropdown">
-            <div class="dropdown-title">Movies</div>
-            <ul class="dropdown-content">
-              <li>Popular</li>
-              <li>Now Playing</li>
-              <li>Upcoming</li>
-              <li>Top Rated</li>
-            </ul>
-          </div>
-          <div class="dropdown">TV Shows</div>
-          <div class="dropdown">People</div>
-          <div class="dropdown">More</div>
+    <div class="header">
+      <div class="header-left">
+        <div class="item">
+          <img
+            src="./public/images/tmdb.svg"
+            width="155"
+            height="20"
+            alt="tmdb"
+          />
         </div>
-        <div class="header-right">
-          <div class="item"><i class="fas fa-plus"></i></div>
-          <div class="item">
-            <div class="en">EN</div>
-          </div>
-          <div class="item">Login</div>
-          <div class="item">Join TMDB</div>
-          <div class="item">
-            <i class="fas fa-search"></i>
-          </div>
+        <div class="dropdown">
+          <div class="dropdown-title">Movies</div>
+          <ul class="dropdown-content">
+            <li>Popular</li>
+            <li>Now Playing</li>
+            <li>Upcoming</li>
+            <li>Top Rated</li>
+          </ul>
+        </div>
+        <div class="dropdown">TV Shows</div>
+        <div class="dropdown">People</div>
+        <div class="dropdown">More</div>
+      </div>
+      <div class="header-right">
+        <div class="item"><i class="fas fa-plus"></i></div>
+        <div class="item">
+          <div class="en">EN</div>
+        </div>
+        <div class="item">Login</div>
+        <div class="item">Join TMDB</div>
+        <div class="item">
+          <i class="fas fa-search"></i>
         </div>
       </div>
     </div>
@@ -63,8 +63,8 @@
             <img src="./public/images/movie1.jpeg" alt="movie1" />
           </div>
           <div class="card-body">
-            <h3>Those</h3>
-            <p>May</p>
+            <h3>Those Who Wish Me Dead</h3>
+            <p>May 05, 2021</p>
             <div class="percent">
               <div>71</div>
               <div><i class="fas fa-percentage icon-percent"></i></div>
@@ -81,8 +81,8 @@
             </div>
           </div>
           <div class="card-body">
-            <h3>Those</h3>
-            <p>May</p>
+            <h3>Mortal Kombat</h3>
+            <p>Apr 07, 2021</p>
             <div class="percent">
               <div>71</div>
               <div><i class="fas fa-percentage icon-percent"></i></div>
@@ -99,8 +99,8 @@
             </div>
           </div>
           <div class="card-body">
-            <h3>Those</h3>
-            <p>May</p>
+            <h3>Tom Clancy's Without Remorse</h3>
+            <p>Apr 29, 2021</p>
             <div class="percent">
               <div>71</div>
               <div><i class="fas fa-percentage icon-percent"></i></div>
@@ -117,8 +117,8 @@
             </div>
           </div>
           <div class="card-body">
-            <h3>Those</h3>
-            <p>May</p>
+            <h3>Godzilla vs. Kong</h3>
+            <p>Mar 24, 2021</p>
             <div class="percent">
               <div>71</div>
               <div><i class="fas fa-percentage icon-percent"></i></div>
@@ -135,8 +135,8 @@
             </div>
           </div>
           <div class="card-body">
-            <h3>Those</h3>
-            <p>May</p>
+            <h3>Nobody</h3>
+            <p>Mar 26, 2021</p>
             <div class="percent">
               <div>71</div>
               <div><i class="fas fa-percentage icon-percent"></i></div>
@@ -153,8 +153,8 @@
             </div>
           </div>
           <div class="card-body">
-            <h3>Those</h3>
-            <p>May</p>
+            <h3>Vanquish</h3>
+            <p>Apr 16, 2021</p>
             <div class="percent">
               <div>71</div>
               <div><i class="fas fa-percentage icon-percent"></i></div>
@@ -222,4 +222,5 @@
     </div>
     <!-- footer -->
   </body>
+  <script src="./public/js/index.js"></script>
 </html>
