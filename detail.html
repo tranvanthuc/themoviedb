@@ -4,9 +4,17 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Detail</title>
+    <title>Themoviedb</title>
+
+    <link rel="stylesheet" href="./public/styles/default.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="./public/styles/header.css" />
-    <link rel="stylesheet" href="./public/styles/index.css" />
+    <link rel="stylesheet" href="./public/styles/detail.css" />
     <link rel="stylesheet" href="./public/styles/footer.css" />
     <script
       src="https://kit.fontawesome.com/e513c0ed06.js"
@@ -14,6 +22,593 @@
     ></script>
   </head>
   <body>
-    <h1>Detail</h1>
+    <!-- header -->
+    <div class="header">
+      <div class="header-left">
+        <div class="item">
+          <img
+            src="./public/images/tmdb.svg"
+            width="155"
+            height="20"
+            alt="tmdb"
+          />
+        </div>
+        <div class="dropdown">
+          <div class="dropdown-title">Movies</div>
+          <ul class="dropdown-content">
+            <li>Popular</li>
+            <li>Now Playing</li>
+            <li>Upcoming</li>
+            <li>Top Rated</li>
+          </ul>
+        </div>
+        <div class="dropdown">TV Shows</div>
+        <div class="dropdown">People</div>
+        <div class="dropdown">More</div>
+      </div>
+      <div class="header-right">
+        <div class="item"><i class="fas fa-plus"></i></div>
+        <div class="item">
+          <div class="en">EN</div>
+        </div>
+        <div class="item">Login</div>
+        <div class="item">Join TMDB</div>
+        <div class="item">
+          <i class="fas fa-search"></i>
+        </div>
+      </div>
+    </div>
+    <!-- header -->
+
+    <!-- scroller -->
+    <div class="scroller">
+      <div class="scroller-item active">
+        Overview <i class="fas fa-sort-down"></i>
+      </div>
+      <div class="scroller-item">Media <i class="fas fa-sort-down"></i></div>
+      <div class="scroller-item">Fandom <i class="fas fa-sort-down"></i></div>
+      <div class="scroller-item">Share <i class="fas fa-sort-down"></i></div>
+    </div>
+    <!-- scroller -->
+
+    <!-- poster -->
+    <div class="poster-cnt">
+      <div class="overlay-bg d-flex">
+        <div class="poster-img">
+          <img
+            src="./public/images/movie4.jpeg"
+            alt="poster"
+            width="300"
+            height="450"
+          />
+        </div>
+        <div class="desc">
+          <h1>Godzilla vs. Kong <span class="year">(2021)</span></h1>
+          <!-- facts -->
+          <div class="facts">
+            <span class="cert">PG-13</span>
+            <span class="release">03/26/2021 (VN)</span>
+            <span class="genres">
+              <i class="fas fa-circle"></i> Action, Adventure, Science Fiction
+              <i class="fas fa-circle"></i>
+            </span>
+            <span class="runtime">1h 53m</span>
+          </div>
+
+          <!-- actions -->
+          <div class="actions flex-wrap">
+            <div class="percent me-2">
+              <div>71</div>
+              <div><i class="fas fa-percentage icon-percent"></i></div>
+            </div>
+            <div class="mx-3">
+              User <br />
+              score
+            </div>
+            <div class="list-actions">
+              <div class="item-action"><i class="fas fa-list"></i></div>
+              <div class="item-action"><i class="fas fa-heart"></i></div>
+              <div class="item-action"><i class="fas fa-bookmark"></i></div>
+              <div class="item-action"><i class="fas fa-star"></i></div>
+            </div>
+            <div>
+              <i class="fas fa-play" class="me-2"></i
+              ><span class="ms-2">Play Trailer</span>
+            </div>
+          </div>
+
+          <div class="fst-italic fw-lighter mt-3 text-white-50">
+            One Will Fall
+          </div>
+          <h5 class="my-2">Overview</h5>
+          <p class="fw-light">
+            In a time when monsters walk the Earth, humanity’s fight for its
+            future sets Godzilla and Kong on a collision course that will see
+            the two most powerful forces of nature on the planet collide in a
+            spectacular battle for the ages.
+          </p>
+          <div class="people row">
+            <div class="col-4 mb-3">
+              <div class="fw-bold">Adam Wingard</div>
+              <div class="position fw-lighter">Director</div>
+            </div>
+            <div class="col-4 mb-3">
+              <div class="fw-bold">Max Borenstein</div>
+              <div class="position fw-lighter">Screenplay</div>
+            </div>
+            <div class="col-4 mb-3">
+              <div class="fw-bold">Eric Pearson</div>
+              <div class="position fw-lighter">Screenplay</div>
+            </div>
+            <div class="col-4 mb-3">
+              <div class="fw-bold">Zach Shields</div>
+              <div class="position fw-lighter">Story</div>
+            </div>
+            <div class="col-4 mb-3">
+              <div class="fw-bold">Terry Rossio</div>
+              <div class="position fw-lighter">Story</div>
+            </div>
+            <div class="col-4 mb-3">
+              <div class="fw-bold">Michael Dougherty</div>
+              <div class="position fw-lighter">Story</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- poster -->
+    </div>
+    <!-- end header -->
+
+    <!-- main -->
+    <div class="main d-flex p-5">
+      <!-- main left -->
+      <div class="main-left">
+        <!-- cast -->
+        <h3 class="mb-3">Top Billed Cast</h3>
+        <div class="bill-cast d-flex">
+          <div class="card me-3 cast">
+            <img
+              src="./public/images/person.jpeg"
+              class="card-img-top"
+              alt="person"
+              height="175"
+            />
+            <div class="card-body p-2">
+              <div class="fw-bold">Alexander Skarsgård</div>
+              <small class="fw-light">Dr. Nathan Lind</small>
+            </div>
+          </div>
+          <div class="card me-3 cast">
+            <img
+              src="./public/images/person.jpeg"
+              class="card-img-top"
+              alt="person"
+              height="175"
+            />
+            <div class="card-body p-2">
+              <div class="fw-bold">Alexander Skarsgård</div>
+              <small class="fw-light">Dr. Nathan Lind</small>
+            </div>
+          </div>
+          <div class="card me-3 cast">
+            <img
+              src="./public/images/person.jpeg"
+              class="card-img-top"
+              alt="person"
+              height="175"
+            />
+            <div class="card-body p-2">
+              <div class="fw-bold">Alexander Skarsgård</div>
+              <small class="fw-light">Dr. Nathan Lind</small>
+            </div>
+          </div>
+          <div class="card me-3 cast">
+            <img
+              src="./public/images/person.jpeg"
+              class="card-img-top"
+              alt="person"
+              height="175"
+            />
+            <div class="card-body p-2">
+              <div class="fw-bold">Alexander Skarsgård</div>
+              <small class="fw-light">Dr. Nathan Lind</small>
+            </div>
+          </div>
+          <div class="card me-3 cast">
+            <img
+              src="./public/images/person.jpeg"
+              class="card-img-top"
+              alt="person"
+              height="175"
+            />
+            <div class="card-body p-2">
+              <div class="fw-bold">Alexander Skarsgård</div>
+              <small class="fw-light">Dr. Nathan Lind</small>
+            </div>
+          </div>
+          <div class="card me-3 cast">
+            <img
+              src="./public/images/person.jpeg"
+              class="card-img-top"
+              alt="person"
+              height="175"
+            />
+            <div class="card-body p-2">
+              <div class="fw-bold">Alexander Skarsgård</div>
+              <small class="fw-light">Dr. Nathan Lind</small>
+            </div>
+          </div>
+          <div class="card me-3 cast">
+            <img
+              src="./public/images/person.jpeg"
+              class="card-img-top"
+              alt="person"
+              height="175"
+            />
+            <div class="card-body p-2">
+              <div class="fw-bold">Alexander Skarsgård</div>
+              <small class="fw-light">Dr. Nathan Lind</small>
+            </div>
+          </div>
+          <div class="card me-3 cast">
+            <img
+              src="./public/images/person.jpeg"
+              class="card-img-top"
+              alt="person"
+              height="175"
+            />
+            <div class="card-body p-2">
+              <div class="fw-bold">Alexander Skarsgård</div>
+              <small class="fw-light">Dr. Nathan Lind</small>
+            </div>
+          </div>
+          <div class="card me-3 cast">
+            <img
+              src="./public/images/person.jpeg"
+              class="card-img-top"
+              alt="person"
+              height="175"
+            />
+            <div class="card-body p-2">
+              <div class="fw-bold">Alexander Skarsgård</div>
+              <small class="fw-light">Dr. Nathan Lind</small>
+            </div>
+          </div>
+
+          <div class="d-flex align-items-center cast">
+            <span class="me-2 fw-bold">View More</span>
+            <i class="fas fa-arrow-right"></i>
+          </div>
+        </div>
+        <h6 class="my-4">Full Cast & Crew</h6>
+        <!-- end cast -->
+
+        <hr />
+
+        <!-- social -->
+        <div class="menu d-flex align-items-baseline">
+          <h3 class="me-4">Social</h3>
+          <h6 class="active mx-3 py-2">
+            Reviews <span class="text-black-50">0</span>
+          </h6>
+          <h6 class="py-2 mx-3">
+            Discussions <span class="text-black-50">11</span>
+          </h6>
+        </div>
+        <div class="menu-content mt-2">
+          <div class="card-review br-1 d-flex">
+            <div>
+              <img
+                class="rounded-circle me-3"
+                src="https://via.placeholder.com/70"
+                alt="logo"
+              />
+            </div>
+            <div class="comment d-inline">
+              <div>
+                <span class="fw-bold me-2 fs-5">A review by Chris Sawin</span>
+                <span class="badge rounded-pill bg-dark align-text-bottom"
+                  ><i class="fas fa-star"></i> 7.0</span
+                >
+              </div>
+              <small class="fw-lighter"
+                >Written by <span class="fw-normal">Chris Sawin</span> on April
+                2, 2021</small
+              >
+              <p class="fw-light mt-3">
+                Satisfying through and through. Also they seemed to learn from
+                the past mistakes (with Godzilla and Godzilla: King of the
+                Monsters) of doing too much with the human characters, here they
+                are thankfully just window dressing for the battle between the
+                two titans.
+                <span class="fw-bold">3.75/5</span>
+              </p>
+            </div>
+          </div>
+        </div>
+        <h6 class="my-4">Read All Reviews</h6>
+        <!-- end social -->
+
+        <!-- media -->
+        <div class="menu d-flex align-items-baseline">
+          <h3 class="me-4">Media</h3>
+          <h6 class="active mx-3 py-2">
+            Most Popular <span class="text-black-50">0</span>
+          </h6>
+          <h6 class="py-2 mx-3">Video <span class="text-black-50">10</span></h6>
+          <h6 class="py-2 mx-3">
+            Backdrops <span class="text-black-50">200</span>
+          </h6>
+          <h6 class="py-2 mx-3">
+            Posters <span class="text-black-50">120</span>
+          </h6>
+        </div>
+        <div class="menu-content overflow-x-scroll py-2 d-flex br-1">
+          <div>
+            <iframe
+              width="500"
+              height="300"
+              src="https://www.youtube.com/embed/odM92ap8_c0"
+            ></iframe>
+          </div>
+          <div>
+            <iframe
+              width="500"
+              height="300"
+              src="https://www.youtube.com/embed/J-FjUN0O61k"
+            ></iframe>
+          </div>
+          <div>
+            <iframe
+              width="500"
+              height="300"
+              src="https://www.youtube.com/embed/2dXRyDibGY0"
+            ></iframe>
+          </div>
+        </div>
+        <!-- end media -->
+
+        <hr class="my-4" />
+
+        <!-- collections -->
+        <div class="collections br-1 mt-3">
+          <div class="overlay-bg text-white br-1">
+            <h2>Part of the Godzilla Collection</h2>
+            <p>
+              Includes Godzilla, Godzilla: King of the Monsters, Godzilla vs.
+              Kong
+            </p>
+            <div class="mt-5">
+              <a href="#" class="view-collection">view the collection</a>
+            </div>
+          </div>
+        </div>
+        <!-- end collections-->
+
+        <hr class="my-4" />
+
+        <!-- recommendations -->
+        <div class="recommendations">
+          <h2>Recommendations</h2>
+          <div class="re-scroller">
+            <div class="item-re">
+              <div class="position-relative">
+                <img src="./public/images/re1.jpeg" alt="re1" />
+                <div class="text-hover">
+                  <i class="far fa-calendar-alt"></i>
+                  <span class="ms-1">03/18/2021</span>
+                </div>
+              </div>
+              <p class="d-flex justify-content-between mt-1">
+                <span>Zack Snyder's Justice League</span>
+                <span>84%</span>
+              </p>
+            </div>
+            <div class="item-re">
+              <div class="position-relative">
+                <img src="./public/images/re2.jpeg" alt="re2" />
+                <div class="text-hover">
+                  <i class="far fa-calendar-alt"></i>
+                  <span class="ms-1">12/08/2021</span>
+                </div>
+              </div>
+              <p class="d-flex justify-content-between mt-1">
+                <span>Mortal Kombat</span>
+                <span>94%</span>
+              </p>
+            </div>
+            <div class="item-re">
+              <div class="position-relative">
+                <img src="./public/images/re3.jpeg" alt="re3" />
+                <div class="text-hover">
+                  <i class="far fa-calendar-alt"></i>
+                  <span class="ms-1">03/18/2021</span>
+                </div>
+              </div>
+              <p class="d-flex justify-content-between mt-1">
+                <span>Nobody</span>
+                <span>74%</span>
+              </p>
+            </div>
+            <div class="item-re">
+              <div class="position-relative">
+                <img src="./public/images/re4.jpeg" alt="re4" />
+                <div class="text-hover">
+                  <i class="far fa-calendar-alt"></i>
+                  <span class="ms-1">03/18/2021</span>
+                </div>
+              </div>
+              <p class="d-flex justify-content-between mt-1">
+                <span>Raya and the Last Dragon</span>
+                <span>95%</span>
+              </p>
+            </div>
+            <div class="item-re">
+              <div class="position-relative">
+                <img src="./public/images/re5.jpeg" alt="re5" />
+                <div class="text-hover">
+                  <i class="far fa-calendar-alt"></i>
+                  <span class="ms-1">03/18/2021</span>
+                </div>
+              </div>
+              <p class="d-flex justify-content-between mt-1">
+                <span>Tom & Jerry</span>
+                <span>97%</span>
+              </p>
+            </div>
+            <div class="item-re">
+              <div class="position-relative">
+                <img src="./public/images/re6.jpeg" alt="re6" />
+                <div class="text-hover">
+                  <i class="far fa-calendar-alt"></i>
+                  <span class="ms-1">03/18/2021</span>
+                </div>
+              </div>
+              <p class="d-flex justify-content-between mt-1">
+                <span>Wonder Woman 1984</span>
+                <span>97%</span>
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- end recommendations -->
+      </div>
+      <!-- end main left -->
+
+      <!-- main right -->
+      <div class="main-right ps-5">
+        <div class="media">
+          <i class="fa-2x fab fa-facebook-square"></i>
+          <i class="fa-2x fab fa-twitter-square mx-2"></i>
+          <i class="fa-2x fab fa-instagram-square mx-2"></i>
+          <i class="fa-2x fas fa-play mx-2"></i>
+          <i class="fa-2x fas fa-link"></i>
+        </div>
+
+        <div class="fs-5 mt-3">Status</div>
+        <div class="fw-light">Released</div>
+        <div class="fs-5 mt-3">Original Language</div>
+        <div class="fw-light">English</div>
+        <div class="fs-5 mt-3">Budget</div>
+        <div class="fw-light">$200,000,000.00</div>
+        <div class="fs-5 mt-3">Revenue</div>
+        <div class="fw-light">$438,076,774.00</div>
+        <div class="fs-5 mt-3">Keywords</div>
+        <div class="d-flex flex-wrap py-2">
+          <div class="keyword">giant monster</div>
+          <div class="keyword">king kong</div>
+          <div class="keyword">kaiju</div>
+          <div class="keyword">godzilla</div>
+        </div>
+
+        <hr />
+        <div class="fs-5 my-2">Content Score</div>
+        <div class="score">100</div>
+        <small>Yes! Looking good!</small>
+
+        <div class="fs-5 my-2">Top Contributors</div>
+        <div class="py-2 d-flex align-items-center">
+          <div class="avatar">
+            <img
+              class="rounded-circle me-3"
+              src="https://via.placeholder.com/50"
+              alt="logo"
+            />
+          </div>
+          <div>
+            <h5>160</h5>
+            <span class="fw-lighter">TREX99</span>
+          </div>
+        </div>
+        <div class="py-2 d-flex align-items-center">
+          <div class="avatar">
+            <img
+              class="rounded-circle me-3"
+              src="https://via.placeholder.com/50"
+              alt="logo"
+            />
+          </div>
+          <div>
+            <h5>160</h5>
+            <span class="fw-lighter">TREX99</span>
+          </div>
+        </div>
+        <div class="py-2 d-flex align-items-center">
+          <div class="avatar">
+            <img
+              class="rounded-circle me-3"
+              src="https://via.placeholder.com/50"
+              alt="logo"
+            />
+          </div>
+          <div>
+            <h5>160</h5>
+            <span class="fw-lighter">TREX99</span>
+          </div>
+        </div>
+      </div>
+      <!-- main right -->
+    </div>
+    <!-- main -->
+
+    <!-- footer -->
+    <div class="footer">
+      <div class="f-container">
+        <div>
+          <div align="right">
+            <img
+              width="130"
+              height="95"
+              src="./public/images/logo.svg"
+              alt="logo"
+            />
+            <div class="join">join the community</div>
+          </div>
+        </div>
+        <div>
+          <h3 class="f-title">the basics</h3>
+          <div>
+            <li><a href="#">About TMDb</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">Support Forums</a></li>
+            <li><a href="#">API</a></li>
+            <li><a href="#">System Status</a></li>
+          </div>
+        </div>
+        <div>
+          <h3 class="f-title">Get Involved</h3>
+          <div>
+            <li><a href="#">Contribution Bible</a></li>
+            <li><a href="#">3rd Party Applications</a></li>
+            <li><a href="#">Add New Movie</a></li>
+            <li><a href="#">Add New TV Show</a></li>
+          </div>
+        </div>
+        <div>
+          <h3 class="f-title">Community</h3>
+          <div>
+            <li><a href="#">Guidelines</a></li>
+            <li><a href="#">Discussions</a></li>
+            <li><a href="#">Leaderboard</a></li>
+            <li><a href="#">Twitter</a></li>
+          </div>
+        </div>
+        <div>
+          <h3 class="f-title">Legal</h3>
+          <div>
+            <li><a href="#">Terms of Use</a></li>
+            <li><a href="#">API Terms of Use</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- footer -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+      crossorigin="anonymous"
+    ></script>
   </body>
+  <script src="./public/js/index.js"></script>
 </html>
