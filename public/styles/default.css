@@ -17,6 +17,6 @@ html,body {
   border-radius: 1rem;
 }
 
-.overflow-x-scroll {
-  overflow-x: scroll;
+.overflow-x-auto {
+  overflow-x: auto;
 }

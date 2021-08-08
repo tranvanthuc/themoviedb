@@ -8,11 +8,17 @@
 
     <link rel="stylesheet" href="./public/styles/default.css" />
     <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
-      integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
       crossorigin="anonymous"
     />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./public/styles/default.css" />
     <link rel="stylesheet" href="./public/styles/header.css" />
     <link rel="stylesheet" href="./public/styles/detail.css" />
     <link rel="stylesheet" href="./public/styles/footer.css" />
@@ -25,7 +31,7 @@
     <!-- header -->
     <div class="header">
       <div class="header-left">
-        <div class="item">
+        <div class="item" id="logo">
           <img
             src="./public/images/tmdb.svg"
             width="155"
@@ -33,18 +39,10 @@
             alt="tmdb"
           />
         </div>
-        <div class="dropdown">
-          <div class="dropdown-title">Movies</div>
-          <ul class="dropdown-content">
-            <li>Popular</li>
-            <li>Now Playing</li>
-            <li>Upcoming</li>
-            <li>Top Rated</li>
-          </ul>
-        </div>
-        <div class="dropdown">TV Shows</div>
-        <div class="dropdown">People</div>
-        <div class="dropdown">More</div>
+        <div class="item">Movies</div>
+        <div class="item">TV Shows</div>
+        <div class="item">People</div>
+        <div class="item">More</div>
       </div>
       <div class="header-right">
         <div class="item"><i class="fas fa-plus"></i></div>
@@ -168,7 +166,7 @@
         <div class="bill-cast d-flex">
           <div class="card me-3 cast">
             <img
-              src="./public/images/person.jpeg"
+              src="./public/images/person1.jpeg"
               class="card-img-top"
               alt="person"
               height="175"
@@ -180,98 +178,98 @@
           </div>
           <div class="card me-3 cast">
             <img
-              src="./public/images/person.jpeg"
+              src="./public/images/person2.jpeg"
               class="card-img-top"
               alt="person"
               height="175"
             />
             <div class="card-body p-2">
-              <div class="fw-bold">Alexander Skarsgård</div>
-              <small class="fw-light">Dr. Nathan Lind</small>
+              <div class="fw-bold">Millie Bobby Brown</div>
+              <small class="fw-light">Madison Russell</small>
             </div>
           </div>
           <div class="card me-3 cast">
             <img
-              src="./public/images/person.jpeg"
+              src="./public/images/person3.jpeg"
               class="card-img-top"
               alt="person"
               height="175"
             />
             <div class="card-body p-2">
-              <div class="fw-bold">Alexander Skarsgård</div>
-              <small class="fw-light">Dr. Nathan Lind</small>
+              <div class="fw-bold">Rebecca Hall</div>
+              <small class="fw-light">Dr. Ilene Andrews</small>
             </div>
           </div>
           <div class="card me-3 cast">
             <img
-              src="./public/images/person.jpeg"
+              src="./public/images/person4.jpeg"
               class="card-img-top"
               alt="person"
               height="175"
             />
             <div class="card-body p-2">
-              <div class="fw-bold">Alexander Skarsgård</div>
-              <small class="fw-light">Dr. Nathan Lind</small>
+              <div class="fw-bold">Brian Tyree Henry</div>
+              <small class="fw-light">Bernie Hayes</small>
             </div>
           </div>
           <div class="card me-3 cast">
             <img
-              src="./public/images/person.jpeg"
+              src="./public/images/person5.jpeg"
               class="card-img-top"
               alt="person"
               height="175"
             />
             <div class="card-body p-2">
-              <div class="fw-bold">Alexander Skarsgård</div>
-              <small class="fw-light">Dr. Nathan Lind</small>
+              <div class="fw-bold">Shun Oguri</div>
+              <small class="fw-light">Ren Serizawa</small>
             </div>
           </div>
           <div class="card me-3 cast">
             <img
-              src="./public/images/person.jpeg"
+              src="./public/images/person6.jpeg"
               class="card-img-top"
               alt="person"
               height="175"
             />
             <div class="card-body p-2">
-              <div class="fw-bold">Alexander Skarsgård</div>
-              <small class="fw-light">Dr. Nathan Lind</small>
+              <div class="fw-bold">Eiza González</div>
+              <small class="fw-light">Maia Simmons</small>
             </div>
           </div>
           <div class="card me-3 cast">
             <img
-              src="./public/images/person.jpeg"
+              src="./public/images/person7.jpeg"
               class="card-img-top"
               alt="person"
               height="175"
             />
             <div class="card-body p-2">
-              <div class="fw-bold">Alexander Skarsgård</div>
-              <small class="fw-light">Dr. Nathan Lind</small>
+              <div class="fw-bold">Julian Dennison</div>
+              <small class="fw-light">Josh Valentine</small>
             </div>
           </div>
           <div class="card me-3 cast">
             <img
-              src="./public/images/person.jpeg"
+              src="./public/images/person8.jpeg"
               class="card-img-top"
               alt="person"
               height="175"
             />
             <div class="card-body p-2">
-              <div class="fw-bold">Alexander Skarsgård</div>
-              <small class="fw-light">Dr. Nathan Lind</small>
+              <div class="fw-bold">Lance Reddick</div>
+              <small class="fw-light">Guillermin</small>
             </div>
           </div>
           <div class="card me-3 cast">
             <img
-              src="./public/images/person.jpeg"
+              src="./public/images/person9.jpeg"
               class="card-img-top"
               alt="person"
               height="175"
             />
             <div class="card-body p-2">
-              <div class="fw-bold">Alexander Skarsgård</div>
-              <small class="fw-light">Dr. Nathan Lind</small>
+              <div class="fw-bold">Kyle Chandler</div>
+              <small class="fw-light">Mark Russell</small>
             </div>
           </div>
 
@@ -343,7 +341,7 @@
             Posters <span class="text-black-50">120</span>
           </h6>
         </div>
-        <div class="menu-content overflow-x-scroll py-2 d-flex br-1">
+        <div class="menu-content overflow-x-auto py-2 d-flex br-1">
           <div>
             <iframe
               width="500"
@@ -604,11 +602,6 @@
       </div>
     </div>
     <!-- footer -->
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
-      crossorigin="anonymous"
-    ></script>
   </body>
   <script src="./public/js/index.js"></script>
 </html>
